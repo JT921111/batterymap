@@ -1,0 +1,37 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Battery Map</title>
+    <script src="result.js"></script>
+  </head>
+  <body>
+    <form name="page">
+      <table id="main" border="0" width="100%" height="100%" style="font-size:21px;font-family:DFKai-sb;">
+        <tr>
+          <td align="center" valign="middle" bgcolor="#c0c0c0" width="300">
+            <select name="position" onchange="gacha()">
+              <option value="https://www.google.com/maps/d/embed?mid=19P06bxrF_KkMGpVOeqQlluoYafzRHG4M&usp" class="0"> </option>
+              <optgroup label="Taipei">
+                <option value="2" class="1">A</option>
+                <option value="3" class="2">B</option>
+                <option value="4" class="3">C</option>
+                <option value="5" class="4">D</option>
+                <option value="6" class="5">E</option>
+              </optgroup>
+            </select>
+            <input type="checkbox" id="refresh">每秒刷新
+            <br>
+            <label for="position">電池個數</label>
+            <span id="result1">0</span><br>
+            <label for="over">超過80%電池個數</label>
+            <span id="result2">0</span>
+          </td>
+          <td>
+            <iframe id="link" src="https://www.google.com/maps/d/embed?mid=19P06bxrF_KkMGpVOeqQlluoYafzRHG4M&usp" width="100%" height="100%" style="border:none;">
+           </td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>
